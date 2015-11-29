@@ -1,3 +1,9 @@
+mini-dinstall (0.6.30+nmu1) unstable; urgency=low
+
+  * Non-maintainer upload.
+
+ -- Heinrich Schuchardt <xypron.glpk@gmx.de>  Sun, 29 Nov 2015 10:26:16 +0100
+
 mini-dinstall (0.6.30) unstable; urgency=low
 
   * [885f9fc] lintian: fix vcs-field-not-canonical
