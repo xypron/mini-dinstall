@@ -373,7 +373,7 @@ class DistOptionHandler:
         self._optionmap['post_install_script'] = ['str', None]
         self._optionmap['pre_install_script'] = ['str', None]
         self._optionmap['dynamic_reindex'] = ['bool', 1]
-        self._optionmap['chown_changes_files'] = ['bool', 1]
+        self._optionmap['chmod_changes_files'] = ['bool', 1]
         self._optionmap['keep_old'] = ['bool', None]
         self._optionmap['mail_on_success'] = ['bool', 1]
         self._optionmap['tweet_on_success'] = ['bool', 0]
@@ -823,7 +823,7 @@ class ArchiveDir:
             self._logger.exception('Failed to process "%s"' % (changefilename,))
             self._reject_changefile(changefilename, changefile, e)
             return 0
-        if self._chown_changes_files:
+        if self._chmod_changes_files:
             do_chmod(changefilename, 0600)
         target = os.path.join(self._dir, os.path.basename(changefilename))
         # the final step
