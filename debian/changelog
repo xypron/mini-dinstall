@@ -1,3 +1,9 @@
+mini-dinstall (0.6.30+nmu4) unstable; urgency=medium
+
+  * Depend on debian-keyring
+
+ -- Heinrich Schuchardt <xypron.glpk@gmx.de>  Sun, 27 Nov 2016 15:11:56 +0100
+
 mini-dinstall (0.6.30+nmu2) unstable; urgency=low
 
   * Add option backport_release
